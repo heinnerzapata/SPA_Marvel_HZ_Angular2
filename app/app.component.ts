@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector : 'app',
-  template : '<h1>{{saludo}}</h1>'
+  templateUrl : './app/app.component.html'
 })
 
 export class AppComponent{
-  saludo : string;
-  constructor(){
-    this.saludo = "!!Hola angular HZ";
-  }
+
 }

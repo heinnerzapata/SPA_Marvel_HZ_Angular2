@@ -11,26 +11,26 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var TestComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            TestComponent = (function () {
+                function TestComponent() {
                 }
-                AppComponent = __decorate([
+                TestComponent = __decorate([
                     core_1.Component({
-                        selector: 'app',
-                        templateUrl: './app/app.component.html'
+                        selector: 'test-component',
+                        template: '<h3>Test</h3>'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], TestComponent);
+                return TestComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("TestComponent", TestComponent);
         }
     }
 });
