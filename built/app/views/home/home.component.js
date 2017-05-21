@@ -1,4 +1,4 @@
-System.register(['@angular/core'], function(exports_1, context_1) {
+System.register(['@angular/core', './sortnav/sortnav.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,28 +10,32 @@ System.register(['@angular/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var HeaderComponent;
+    var core_1, sortnav_component_1;
+    var HomeComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (sortnav_component_1_1) {
+                sortnav_component_1 = sortnav_component_1_1;
             }],
         execute: function() {
-            HeaderComponent = (function () {
-                function HeaderComponent() {
+            HomeComponent = (function () {
+                function HomeComponent() {
                 }
-                HeaderComponent = __decorate([
+                HomeComponent = __decorate([
                     core_1.Component({
-                        selector: 'header-component',
-                        templateUrl: 'app/layout/header/header.component.html',
-                        styleUrls: ['app/layout/header/header.component.css']
+                        selector: 'home-component',
+                        templateUrl: 'app/views/home/home.component.html',
+                        styleUrls: ['app/views/home/home.component.css'],
+                        directives: [sortnav_component_1.SortNavComponent]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HeaderComponent);
-                return HeaderComponent;
+                ], HomeComponent);
+                return HomeComponent;
             }());
-            exports_1("HeaderComponent", HeaderComponent);
+            exports_1("HomeComponent", HomeComponent);
         }
     }
 });

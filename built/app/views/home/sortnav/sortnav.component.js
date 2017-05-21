@@ -11,27 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HeaderComponent;
+    var SortNavComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HeaderComponent = (function () {
-                function HeaderComponent() {
+            SortNavComponent = (function () {
+                function SortNavComponent() {
                 }
-                HeaderComponent = __decorate([
+                SortNavComponent = __decorate([
                     core_1.Component({
-                        selector: 'header-component',
-                        templateUrl: 'app/layout/header/header.component.html',
-                        styleUrls: ['app/layout/header/header.component.css']
+                        selector: 'sortnav-component',
+                        templateUrl: 'app/views/home/sortnav/sortnav.component.html',
+                        styleUrls: ['app/views/home/sortnav/sortnav.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HeaderComponent);
-                return HeaderComponent;
+                ], SortNavComponent);
+                return SortNavComponent;
             }());
-            exports_1("HeaderComponent", HeaderComponent);
+            exports_1("SortNavComponent", SortNavComponent);
         }
     }
 });

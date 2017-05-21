@@ -11,27 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HeaderComponent;
+    var FooterComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HeaderComponent = (function () {
-                function HeaderComponent() {
+            FooterComponent = (function () {
+                function FooterComponent() {
                 }
-                HeaderComponent = __decorate([
+                FooterComponent = __decorate([
                     core_1.Component({
-                        selector: 'header-component',
-                        templateUrl: 'app/layout/header/header.component.html',
-                        styleUrls: ['app/layout/header/header.component.css']
+                        selector: 'footer-component',
+                        templateUrl: "app/layout/footer/footer.component.html",
+                        styleUrls: ["app/layout/footer/footer.component.css"]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HeaderComponent);
-                return HeaderComponent;
+                ], FooterComponent);
+                return FooterComponent;
             }());
-            exports_1("HeaderComponent", HeaderComponent);
+            exports_1("FooterComponent", FooterComponent);
         }
     }
 });
